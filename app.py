@@ -52,13 +52,10 @@ with col2:
   )
   st.write(EMAIL)
 
-soc_med_list = [k for _,k in enumerate(SOC_MED)]
-soc_med_tuple = tuple(soc_med_list)
-soc_med_tuple = st.columns(len(SOC_MED))
+cols = st.columns(len(SOC_MED))
 
-for a in soc_med_tuple:
-  with a:
-    st.markdown('[{}]({})'.format(soc_med_list[soc_med_tuple.index(a)],SOC_MED[soc_med_list[soc_med_tuple.index(a)]]))
+for i,(k,v) in enumerate(SOC_MED.items()):
+  cols[i].write(f'[{k}]({v})')
   
 st.write('---')
 st.header('QUALIFICATION')
