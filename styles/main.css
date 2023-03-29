@@ -1,0 +1,19 @@
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+hr {
+    border: 2px solid red;
+}
+
+h1>div>span {
+    color: orange;
+}
+
+h2>div>span {
+    color: rgb(128, 255, 0);
+}
+
+div.block-container.css-1y4p8pa.egzxvld4 {
+    max-width: 60em;
+}
